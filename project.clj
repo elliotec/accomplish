@@ -31,7 +31,6 @@
    [reagent-forms "0.2.9"]
    [secretary "1.2.1"]
    [hiccup "1.0.5"]
-   [hiccup-bridge "1.0.1"]
    [garden "1.2.5"]]
   :repl-options
   {:init-ns accomplish.repl}
@@ -44,6 +43,7 @@
    [lein-cljsbuild "1.0.4"]
    [lein-garden "0.2.5"]
    [hiccup-watch "0.1.1"]
+   [hiccup-bridge "1.0.1"]
    ]
   :ring
   {:handler accomplish.handler/app,
@@ -79,7 +79,7 @@
   :cljsbuild
   {:builds
    {:app
-    {:source-paths ["src-cljs"],
+    {:source-paths ["src/cljs"],
      :compiler
      {:output-dir "resources/public/js/out",
       :externs ["react/externs/react.js"],
@@ -94,7 +94,7 @@
              :stylesheet accomplish.core/screen
              :compiler {:output-to "resources/public/css/screen.css"
                         :pretty-print? false}}]}
-  :hiccup-watch {:input-dir "src/hics" :output-dir "resources/templates"}
+  :hiccup-watch {:input-dir "src/templates" :output-dir "resources/templates"}
   :uberjar-name
   "accomplish.jar"
   :min-lein-version "2.0.0")

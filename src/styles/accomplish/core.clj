@@ -6,4 +6,5 @@
   [:body
    {:font-family "sans-serif"
     :font-size (px 16)
-    :line-height 1.5}])
+    :line-height 1.5
+    :padding (px 10)}])
