@@ -94,7 +94,7 @@
              :stylesheet accomplish.core/screen
              :compiler {:output-to "resources/public/css/screen.css"
                         :pretty-print? false}}]}
-  :hiccup-watch {:input-dir "src/templates" :output-dir "resources/templates"}
+  :hiccup-watch {:input-dir "src/templates" :output-dir "src/templates"}
   :uberjar-name
   "accomplish.jar"
   :min-lein-version "2.0.0")

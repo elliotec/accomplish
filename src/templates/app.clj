@@ -49,7 +49,7 @@
     "\n        var context = \"{{servlet-context}}\";\n    "]
    "\n    {% if dev %}\n      "
    [:script
-    {:src "//cdnjs.cloudflare.com/ajax/libs/react/0.11.2/react.js"}]
+    {:src "//cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react.js"}]
    "\n      {% script \"/js/out/goog/base.js\" %}\n      {% script \"/js/app.js\" %}\n      "
    [:script
     {:type "text/javascript"}
